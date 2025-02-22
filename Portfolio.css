@@ -1,0 +1,591 @@
+body, html{
+    margin: 0px;
+}
+a{
+    text-decoration: none; 
+    color: inherit;
+}
+#logo{
+    width: 60px
+}
+.slide-in {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+.slide-in.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+.slide-in-up {
+      opacity: 0;
+      transform: translateY(100%);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+.slide-in-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+@keyframes fadeInAnimation{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+@keyframes slideInAnimation{
+    from{
+      transform: translate3d(0, 100%, 0);
+      visibility: visible;
+    }
+    to{
+      transform: translate3d(0, 0, 0);
+    }
+  }
+.profile{
+    background-image: url("chiamaka_pofile.jpg");
+    background-size: cover;
+    height: 600px;
+    animation: fadeInAnimation ease-in 1s;
+}
+.profile-main{
+    display: flex;
+    width: 100%;
+}
+span>a{
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav{
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav-options{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-option{
+    padding: 0px 15px;
+    font-weight: 600;
+}
+
+.nav-options-small{
+    display: none;
+}
+.nav-options-small-main{
+    display: none;
+    position: absolute;
+}
+.nav-options-small:hover .nav-options-small-main {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 7px 2px rgba(0,0,0,0.2);
+    transition: all 2s ease-in-out 0s;
+    z-index: 500;
+    background-color: black;
+    color: white;
+    opacity: 0.9;
+    padding: 10px;
+    font-family: 'Lucida Sans' ;
+    right: 1px;
+  }
+span>a:hover{
+    color: burlywood;
+}
+.profile-section{
+    width: 50%;
+}
+.profile-info{
+    color: beige;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.profile-img{
+    width: 100% ;
+}
+div>h1{
+    margin-top: 250px;
+    font-size: 60px;
+}
+.tagline{
+    line-height: 50px;
+    font-size: 25px;
+    font-family: 'Trebuchet MS';
+    color: burlywood;
+}
+.highlight{
+    background-color: white;
+    margin: 0px;
+}
+.description{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    line-height: 30px;
+    width: 570px;
+    color: rgb(48, 19, 19);
+    padding: 30px;
+}
+.about{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin: 0px;
+    padding: 30px 0px;
+}
+.about-left{
+    width: 40%;
+}
+.about-right{
+    width: 60%;
+}
+.about-left>img{
+    width: 70%;  
+}
+.about-right-inner{
+    background-color: rgba(222, 184, 135, 0.1);
+    border-radius: 5px;
+    width: 80%;
+    line-height: 30px;
+    padding: 30px;
+    border: 1px solid burlywood;
+}
+.about-desc{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+}
+h3.chi{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.expertise-n-tools{
+    width: 80%;
+    background-color: rgba(222, 184, 135, 0.1);
+    color: rgb(48, 19, 19);
+    border-radius: 5px;
+    border: 1px solid burlywood;
+    margin-bottom: 10px;
+    margin-left: 100px;
+}
+.ent-head{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+.ent-body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+.expertise-head{
+    width: 65%;
+    padding: 20px;
+    border: 1px solid burlywood;
+    border-radius: 5px 0px 0px 0px;
+}
+.tools-head{
+    width: 35%;
+    padding: 20px;
+    border: 1px solid burlywood;
+    border-radius: 0px 5px 0px 0px;
+}
+.expertise-body{
+    width: 65%;
+    padding: 20px;
+    border: 1px solid burlywood;
+    border-radius: 0px 0px 0px 5px;
+}
+.tools-body{
+    width: 35%;
+    padding: 20px;
+    border: 1px solid burlywood;
+    border-radius: 0px 0px 5px 0px;
+}
+li{
+    text-align: left;
+    line-height: 50px;
+}
+.how-i-can-help-head{
+    text-align: center;
+}
+.how-i-can-help-bg{
+    background-image: url("chi_landscape.jpg");
+    background-size: cover;
+    height: auto;
+    padding: 60px;
+    margin: 50px 0px;
+}
+.how-i-can-help{
+    width: 40%;
+    padding: 30px;
+    margin-left: 50px;
+    border-radius: 30px;
+    background-color: white ;
+    color: rgb(173, 139, 94);;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 25px;
+}
+.contact-btn1{
+    height: 50px;
+    width: 150px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(173, 139, 94);
+    color: white;
+    margin: 10px;
+    line-height: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+.what-i-do-best-outer{
+    display: flex;
+    justify-content: space-around;
+}
+.chi-do-best{
+    margin-top: 150px;
+    display: block;
+    width: 150px;
+    border-radius: 150px;
+    border: 5px outset white;
+    box-shadow: 0px 2px 7px 2px rgba(0,0,0,0.2);
+}
+.what-i-do-best{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 30px;
+    color: white;
+    background-color: rgb(165, 131, 87);
+    text-align: justify;
+    margin: 10px 30px;
+    padding: 0px;
+    width: 60%;
+}
+.what-i-do-best>img{
+    width: 100%;
+    margin: 0px;
+    display: block;
+}
+.what-i-do-best>span{
+    padding: 10px 60px;
+    display: inline-block;
+}
+.section-head{
+    font-size: 25px;
+    font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 80px 0px;
+}
+.project-cont{
+    padding: 25px;
+    margin: 10px;
+    height: 200px;
+    width: 300px;
+    display: inline-block;
+    box-shadow: 1px 3px 5px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    transition: all 0.5s ease-in-out 0s;
+    cursor: pointer;
+}
+.project-cont:hover{
+    background-color: rgb(231, 231, 231);
+}
+.hr-cont{
+    display: inline-block;
+    width: 25%;
+    margin: 30px;
+}
+.project-subhead{
+    display: inline-block;
+    font-family: Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: rgb(48, 19, 19);
+}
+.project-img{
+    height: 160px;
+    width: 230px;
+    border-radius: 5px;
+}
+.project-title, .collab-title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: rgb(48, 19, 19);
+}
+.project-video{
+    height: 180px;
+    width: 250px;
+    border-radius: 15px;
+}
+.vid-title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: rgb(48, 19, 19);
+    margin: 0px;
+}
+.collab-img{
+    width: 250px;
+}
+.collab-cont{
+    padding: 10px;
+    margin: 10px;
+    height: 300px;
+    width: 280px;
+    display: inline-block;
+    transition: all 0.5s ease-in-out 0s;
+}
+.colab{
+    margin-bottom: 0px;
+    height: 300px;
+    padding: 20px 0px;
+}
+
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 20px auto;
+    padding: 20px;
+    height: auto;
+    border-radius: 10px;
+    max-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  .modal-txt{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 15px;
+    text-align: justify;
+  }
+  .modal-view{
+    padding: 10px 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(173, 139, 94);
+    color: white;
+    margin: 10px;
+    line-height: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .modal-close{
+    padding: 10px 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: maroon;
+    color: white;
+    margin: 10px;
+    line-height: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  
+footer{
+    background-color: whitesmoke;
+    margin-top: 20px;
+}
+.footer{
+    padding: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.links{
+    margin: 30px;
+    color: rgb(30, 144, 255);
+}
+.fleft, .fright{
+    width: 40%;
+    display: inline-block;
+    justify-content: space-between;
+}
+
+@media (max-width: 880px){
+    #logo{
+        height: 40px;
+    }   
+    .nav-options{
+        display: none;
+    }
+    .nav-options-small{
+        display: block;
+        color: white; 
+    }
+    .profile{
+        background-image: url("chiamaka_pofile - Copy.jpg");
+        height: 600px;
+    }
+    .profile-main{
+        flex-direction: column;
+    }
+    div>h1{
+        margin-top: 350px;
+        font-size: 30px;
+    }
+    .tagline{
+        line-height: 30px;
+        font-size: 20px;
+        font-family: 'Trebuchet MS';
+        color: burlywood;
+    }
+    .profile-section{
+        width: 100%;
+    }
+    .description{
+        font-size: 18px;
+        line-height: 30px;
+        width: 300px;
+        padding: 15px;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about-right{
+        margin: 10px;
+        width: 90%;
+    }
+    .about-right-inner{
+        padding: 20px;
+        line-height: 25px;
+        width: 90%;
+    }
+    .expertise-n-tools{
+        width: 90%;
+        font-size: 14px;
+        margin-left: 20px;
+    }
+    .ent-head{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        display: flex;
+        flex-direction: row;
+    }
+    .ent-body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        flex-direction: row;
+    }
+    .expertise-head{
+        width: 55%;
+        padding: 10px;
+    }
+    .tools-head{
+        width: 35%;
+        padding: 10px;
+    }
+    .expertise-body{
+        width: 55%;
+        padding: 10px;
+    }
+    .tools-body{
+        width: 35%;
+        padding: 10px;
+    }
+    li{
+        text-align: left;
+        line-height: 30px;
+    }
+    .how-i-can-help{
+        width: 250px;
+        padding: 30px;
+        margin-left: 30px;
+        border-radius: 20px;
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .how-i-can-help-bg{
+        background-image: url("chi_landscape - copy.jpg");
+        background-size: cover;
+        height: 750px;
+        padding: 70px 0px;
+        margin: 50px 0px;
+    }
+    .contact-btn1{
+        height: 40px;
+        width: 130px;
+        border-radius: 30px;
+        line-height: 20px;
+    }
+    .img-do-best{
+        display: none;
+    }
+    .what-i-do-best{
+        line-height: 25px;
+        font-size: 14px;
+        width: 85%;
+    }
+    .what-i-do-best-outer{
+        display: flex;
+        justify-content:space-between;
+    }
+    .what-i-do-best>span{
+        padding: 10px 30px;
+        display: inline-block;
+    }
+    .hr-cont{
+        display: none;
+    }
+    .project-subhead{
+        margin: 10px 0px;
+        font-size: 14px;
+    }
+    .project-cont{
+        padding: 25px;
+        margin: 10px;
+        height: 150px;
+        width: 250px;
+        display: inline-block;
+        box-shadow: 1px 3px 5px 4px rgba(0, 0, 0, 0.2);
+        border-radius: 30px;
+        transition: all 0.5s ease-in-out 0s;
+        cursor: pointer;
+    }
+    
+    .project-img, .project-video{
+        height: 130px;
+        width: 200px;
+        border-radius: 5px;
+    }
+    .project-title, .collab-title, .vid-title{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 600;
+        color: rgb(48, 19, 19);
+        font-size: 13px;
+    }
+    .campaign, .biz, .vid{
+        height: 250px;
+        overflow-x:scroll;
+        width: 90%;
+    }
+    .campaign-inner{
+        width: 1000px;
+    }
+    .collab-img{
+        width: 200px;
+    }
+    .collab-cont{
+        padding: 0px;
+        margin: 5px;
+        height: 200px;
+        width: 180px;
+        display: inline-block;
+        transition: all 0.5s ease-in-out 0s;
+    }
+    .section-head{
+        font-size: 20px;
+        font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin: 40px 0px;
+    }
+    .fleft, .fright{
+        width: 80%;
+        display: inline-block;
+        justify-content: space-between;
+    }
+}
