@@ -66,3 +66,19 @@ document.addEventListener("DOMContentLoaded", () => {
   
     elements.forEach((el) => observer.observe(el));
   });
+//   function showNav(){
+//     var nav = document.getElementById('mininav');
+//     if (nav.style.display = "none"){
+//       nav.style.display = "block"
+//     }else
+//     if(nav.style.display = "block"){
+//       nav.style.display = "none"
+//     }
+//   }
+  
+// window.addEventListener('click', function(event) {
+//   var profile = document.getElementById('nav-options-small-main');
+//   var nav = document.getElementById('nav-options-small-main');
+//   if (event.target === profile)
+//       nav.style.display = "none";
+// });
